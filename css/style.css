@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+body{
+   background-color:  hsl(210, 46%, 95%);
+   font-family: 'Barlow Semi Condensed', sans-serif;
+   color:  hsl(0, 0%, 100%);
+}
+p{
+  opacity: 70%;
+}
+img{
+  float: left;
+  margin: 20px;
+  border-radius: 30px;
+  border: solid  hsl(0, 0%, 81%) 2px;
+}
+
+h5{
+  clear: left;
+}
+
+.graduate{
+  font-weight: lighter;
+  opacity: 50%;
+}
+.grid-container{
+  display: grid;
+  grid-gap: 30px;
+  padding: 50px;
+}
+
+.grid-item{
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.item1{
+  background: url("../images/bg-pattern-quotation.svg") no-repeat top right 40px;
+  grid-column: 1/ span 2;
+  grid-row: 1;
+  background-color:  hsl(263, 55%, 52%);
+}
+
+.item2{
+  grid-column: 3;
+  grid-row: 1;
+  background-color: hsl(217, 19%, 35%);
+}
+
+.item5{
+  grid-column: 4;
+  grid-row: 1/ span 2;
+  background-color: hsl(0, 0%, 100%);
+  color:  hsl(217, 19%, 35%);
+}
+
+.item3{
+  grid-column: 1;
+  grid-row: 2;
+  background-color: hsl(0, 0%, 100%) ;
+  color:  hsl(217, 19%, 35%);
+}
+
+.item4{
+  grid-column: 2/ span 2;
+  grid-row: 2;
+  background-color: hsl(219, 29%, 14%);
+}
+
+
+.col-3 {width: 100%;}
+.col-6 {width: 100%;}
+
+
+
+/* For mobile view */
+
+@media only screen and (max-width: 375px) {
+  .grid-container{
+    display: inline;
+  }
+  [class*="col-"] {
+    margin: 20px;
+    margin-right: 50px;
+  }
+
+  .item5{
+      margin: 20px;
+  }
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(228, 45%, 44%);
+}
+
+a:hover{
+  color: #000;
+}
